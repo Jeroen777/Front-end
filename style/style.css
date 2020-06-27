@@ -13,6 +13,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*  */
+/* Header */
+/*  */
+
 header {
     z-index: 99;
 }
@@ -105,6 +109,10 @@ header form input {
 
 }
 
+/*  */
+/* Hero/grote afbeelding */
+/*  */
+
 .hero article {
     height: 70vh;
     height: 70vh;
@@ -177,6 +185,10 @@ button:hover {
 
 }
 
+/*  */
+/* Sectie met alle informatie over de auto matches */
+/*  */
+
 .infoAutos {
     margin: auto;
     display: grid;
@@ -198,7 +210,7 @@ button:hover {
     width: 100%;
 }
 
-
+/* class toevoegen als die in de javascript aangeroepen word */
 .info-weergeven {
     opacity: 1;
 }
@@ -213,7 +225,8 @@ button:hover {
     transition: 1s all ease-in-out;
 }
 
-.infoAutos.visible p {
+/* class toevoegen als die in de javascript aangeroepen word */
+.infoAutos.invisible p {
     color: red;
     opacity: 0;
     margin: 0;

@@ -4,7 +4,7 @@ let btn = document.querySelector('#knop');
 
 //functie om informatie van een match te verbergen
 function infoVerbergen() {
-    info.classList.toggle("visible");
+    info.classList.toggle("invisible");
     console.log("testen");
 };
 
@@ -12,14 +12,13 @@ function infoVerbergen() {
 //Functie om de matches in het scherm te laden faden zodra je op een bepaald gedeelte van het scherm scrollt
 function scrollWeergave() {
     var match = document.querySelector('#alleMatches');
-    var matchPlek = match.getBoundingClientRect().top;
-    var schermPlek = window.innerHeight / 2;
+    var matchPlek = match.getBoundingClientRect().top; //berekenen hoeveel pixels de variabel van de top is
+    var schermPlek = window.innerHeight / 2; // aangeven op welk moment je de visualisatie wil plaats laten vinden ik hem op de helft van de pagina gedaan
 
-    if (matchPlek < schermPlek) {
+    if (matchPlek < schermPlek) { //zodra de matchPlek kleiner is dan de schermPlek word de info weergeven door css toe te voegen
         match.classList.add('info-weergeven')
     }
     console.log(matchPlek);
-
 }
 
 //event listeners
