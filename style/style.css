@@ -1,5 +1,10 @@
+/* verbergen elementen als javascript uit staat */
 .no-js .infoAutos {
     opacity: 1;
+}
+
+.no-js #knop {
+    display: none;
 }
 
 body {
@@ -13,7 +18,7 @@ header {
 }
 
 header nav {
-    background-color: black;  
+    background-color: black;
 }
 
 header nav.active {
@@ -59,7 +64,7 @@ header nav ul a:hover {
     transform: scale(1.1);
 }
 
-header form input{
+header form input {
     font-size: 3em;
     color: pink;
 }
@@ -152,16 +157,34 @@ header form input{
     }
 }
 
+button {
+    padding: 2em;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: block;
+    font-size: 1em;
+    transition-duration: 2s;
+    background-color: #05ff98;
+    color: white;
+}
 
+button:hover {
+    background-color: black;
+    color: white;
+
+}
 
 .infoAutos {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35em, 1fr));
     grid-gap: 2em;
-    
+
     text-align: center;
-    
+
 
     padding-bottom: 3em;
     max-width: 100vw;
@@ -171,33 +194,29 @@ header form input{
 }
 
 
-.infoAutos img{
+.infoAutos img {
     width: 100%;
 }
-
 
 
 .info-weergeven {
     opacity: 1;
 }
 
-p {
-    color: black;
+.infoAutos p {
+    color: white;
     opacity: 1;
     background-color: grey;
-    padding-bottom: 2em;
-    height: 10em;
-    max-width: 100vw;
+    padding: 3em;
+    height: 5em;
+
+    transition: 1s all ease-in-out;
 }
 
-.visible {
+.infoAutos.visible p {
     color: red;
     opacity: 0;
     margin: 0;
     padding-bottom: 0;
+    height: 0em;
 }
-
-.informatie {
-    color: yellow;
-}
-
