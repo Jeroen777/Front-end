@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
+    <script>
+        document.documentElement.className =
+          document.documentElement.className.replace('no-js', 'js');
+      </script>
+      
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <meta charset="UTF-8">
@@ -22,32 +27,54 @@
     </header>
 
         <main>
-            <section class="infoAutos">
-                <article class="auto-info">
+
+            <section class="hero">
+                <h1>Car <br>Matching</h1>
+                <article> </article>
+        
+            </section>
+
+            <section class="infoAutos" id="test">
+                <article class="autoInfo" id="contentAuto">
                     <img src="style/images/1.jpg" alt="nissan">
-                    <p>test tekst</p>
+                    <p class=informatie id=verstopInfo>
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                    </p>
                 </article>
 
-                <article class="auto-info">
+                <article class="autoInfo" id="contentAuto">
                     <img src="style/images/2.jpg" alt="mercedes">
-                    <p>test tekst</p>
-                </article>
-                
-                <article class="auto-info">
-                    <img src="style/images/3.jpg" alt="mclaren">
-                    <p>test tekst</p>
+                    <p>
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                    </p>
                 </article>
 
-                <article class="auto-info">
+                <article class="autoInfo" id="contentAuto">
+                    <img src="style/images/3.jpg" alt="mclaren">
+                    <p>
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                    </p>
+                </article>
+
+                <article class="autoInfo" id="contentAuto">
                     <img src="style/images/4.jpg" alt="mazda">
-                    <p>test tekst</p>
+                    <p>test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                        test tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst est tekst
+                    </p>
                 </article>
             </section>
 
 
         </main>
     
-
+        <script src="js/functie.js"></script>
 </body>
 
 </html>
