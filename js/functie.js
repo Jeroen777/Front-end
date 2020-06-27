@@ -8,7 +8,10 @@ function infoVerbergen() {
     console.log("testen");
 };
 
-//Bron MDN. (2020a, 6 mei). Element.getBoundingClientRect(). Geraadpleegd van https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+//BRON: MDN. (2020a, 6 mei). Element.getBoundingClientRect(). Geraadpleegd van https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+//BRON: stackOverflow. (2014, 2 september). JavaScript getBoundingClientRect() changes while scrolling. Geraadpleegd van https://stackoverflow.com/questions/25630035/javascript-getboundingclientrect-changes-while-scrolling
+//BRON: Kantor, I. (2020, 13 juni). Coordinates. Geraadpleegd van https://javascript.info/coordinates
+
 //Functie om de matches in het scherm te laden faden zodra je op een bepaald gedeelte van het scherm scrollt
 function scrollWeergave() {
     var match = document.querySelector('#alleMatches');
@@ -35,6 +38,6 @@ window.addEventListener('keydown', (event) => {
 //functie trigger met de A knop
 document.addEventListener("keydown", function (event) {
     if (event.keyCode == 65) {
-        info.classList.toggle("visible");
+        info.classList.toggle("invisible");
     }
 });
