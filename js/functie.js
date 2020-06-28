@@ -41,3 +41,5 @@ document.addEventListener("keydown", function (event) {
         info.classList.toggle("invisible");
     }
 });
+
+
